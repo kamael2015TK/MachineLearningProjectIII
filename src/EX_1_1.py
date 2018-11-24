@@ -41,7 +41,7 @@ def runEx_1_1(X, attributeNames):
                     gmm = GaussianMixture(n_components=K, covariance_type=covar_type, n_init=reps).fit(X_train)
                     # compute negative log likelihood of X_test
                     CVE[t] += gmm.score_samples(X_test).sum() * -1
-        figure(z+1)
+        figure(z+1+1100)
         plot(KRange, BIC,'-*b')
         plot(KRange, AIC,'-xr')
         plot(KRange, 2*CVE,'-ok')
