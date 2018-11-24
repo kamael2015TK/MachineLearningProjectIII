@@ -14,6 +14,18 @@ def getData():
     
     return data
 
+def getAttributeNames(): 
+    return [
+    'age',
+    'sex M=0,F=1',
+    'trestbps',
+    'chol',
+    'fbs',
+    'thalach',
+    'exang'
+    ]
+def getClassNames(): 
+    return ['Not sick', 'Sick']
 # By running this script you will get 
 # data => multi array [8][294] 
 # attributeNames => Feature names
