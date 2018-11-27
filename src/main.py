@@ -19,7 +19,7 @@ print("EX 1.1 Start")
 print("EX 1.1 Finished")
 
 print("EX 1.2 Start")
-runEx_1_2(X, y)
+runEx_1_2(X, y, getData()[:,7], len(attributeNames), classNames)
 print("EX 1.2 Finished")
 
 show()

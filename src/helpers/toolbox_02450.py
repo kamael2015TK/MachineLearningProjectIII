@@ -470,9 +470,9 @@ def clusterplot(X, clusterid, centroids='None', y='None', covars='None'):
     for color in range(ncolors):
         colors[color] = plt.cm.jet(color/(ncolors-1))[:3]
     for i,cs in enumerate(np.unique(y)):
-        plt.plot(X[(y==cs).ravel(),3], X[(y==cs).ravel(),2], 'o', markeredgecolor='k', markerfacecolor=colors[i],markersize=6, zorder=2)
+        plt.plot(X[(y==cs).ravel(),0], X[(y==cs).ravel(),1], 'o', markeredgecolor='k', markerfacecolor=colors[i],markersize=6, zorder=2)
     for i,cr in enumerate(np.unique(cls)):
-        plt.plot(X[(cls==cr).ravel(),3], X[(cls==cr).ravel(),2], 'o', markersize=12, markeredgecolor=colors[i], markerfacecolor='None', markeredgewidth=3, zorder=1)
+        plt.plot(X[(cls==cr).ravel(),0], X[(cls==cr).ravel(),1], 'o', markersize=12, markeredgecolor=colors[i], markerfacecolor='None', markeredgewidth=3, zorder=1)
     if type(centroids) is not str:        
         for cd in range(centroids.shape[0]):
             plt.plot(centroids[cd,0], centroids[cd,1], '*', markersize=22, markeredgecolor='k', markerfacecolor=colors[cd], markeredgewidth=2, zorder=3)
