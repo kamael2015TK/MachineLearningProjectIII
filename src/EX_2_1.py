@@ -1,4 +1,9 @@
 # exercise 11.3.1
+#
+# Author Duran Köse S147153 (70%)
+# Taras Karpin s153067(20%)
+# Janus Bastian Lansner S145349(10%)
+# 
 import numpy as np
 from matplotlib.pyplot import figure, bar, title, show, plot, xticks
 from scipy.stats.kde import gaussian_kde

@@ -1,3 +1,8 @@
+#
+# Author Taras Karpin S153067 (65%)
+# Duran Köse S147153 (15%) 
+# Janus Bastian Lansner S145349(20%)
+#
 from sklearn import model_selection
 from sklearn.mixture import GaussianMixture
 from toolbox_02450 import clusterplot

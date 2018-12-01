@@ -1,3 +1,8 @@
+#
+# Janus Bastian Lansner S145349 (80%)
+# Duran Köse S147153 (10%)
+# Taras Karpin s153067(10%)
+#
 from matplotlib.pyplot import figure
 from scipy.io import loadmat
 from toolbox_02450 import clusterplot

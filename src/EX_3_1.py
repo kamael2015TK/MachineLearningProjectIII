@@ -2,6 +2,11 @@ from similarity import binarize2
 from apyori import apriori
 import numpy as np
 
+#
+# Janus Bastian Lansner S145349 (85%)
+# Duran Köse S147153 (15%)
+# 
+
 #from ex12_1_3 import X,labels
 # ex12_1_4
 # This is a helper function that transforms a binary matrix into transactions.
@@ -42,5 +47,5 @@ def runEx_3_1(X, attributeNames):
     print(Xbin)
     print(attributeNamesBin)
     T = mat2transactions(Xbin,labels=attributeNamesBin)
-    rules = apriori(T, min_support=0.3, min_confidence=.6)
+    rules = apriori(T, min_support=0.35, min_confidence=.8)
     print_apriori_rules(rules)
