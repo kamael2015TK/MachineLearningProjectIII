@@ -10,7 +10,6 @@ def runEx_1_2(X,y, NS_Y, C, classNames):
     U,S,V = svd(X,full_matrices=False)
     V = V.T
     # Project the centered data onto principal component space
-    Z = X @ V
     i = 0
     j = 1
 

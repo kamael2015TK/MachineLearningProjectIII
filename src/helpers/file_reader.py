@@ -17,12 +17,13 @@ def getData():
 def getAttributeNames(): 
     return [
     'age',
-    'sex M=0,F=1',
+    'sex',
     'trestbps',
     'chol',
     'fbs',
     'thalach',
-    'exang'
+    'exang',
+    'num'
     ]
 def getClassNames(): 
     return ['Not sick', 'Sick']
